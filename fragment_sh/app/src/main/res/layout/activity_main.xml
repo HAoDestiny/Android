@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:background="@drawable/background">
+
+    <View
+        android:id="@+id/exam_title_left_bg"
+        android:layout_width="15px"
+        android:layout_height="150px"
+        android:layout_marginTop="100px"
+        android:layout_marginStart="85px"
+        android:layout_marginLeft="85px"
+        android:orientation="vertical"
+        android:background="@color/title_left_view_bg" />
+
+    <!-- Exam Title -->
+    <TextView
+        android:id="@+id/exam_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="52px"
+        android:layout_marginLeft="30px"
+        android:layout_marginStart="30px"
+        android:layout_marginTop="20px"
+        android:textColor="@color/colorWhite"
+        android:text="@string/tx_exam_title"
+        android:layout_alignTop="@+id/exam_title_left_bg"
+        android:layout_toEndOf="@+id/exam_title_left_bg"
+        android:layout_toRightOf="@+id/exam_title_left_bg" />
+
+    <!-- Exam content 场次-->
+    <LinearLayout
+        android:id="@+id/ll_exam_num"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/exam_title"
+        android:layout_marginTop="20px"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_exam_num_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="82px"
+            android:textColor="@color/colorWhite"
+            android:text="@string/tx_exam_num_left"/>
+
+        <TextView
+            android:id="@+id/tv_exam_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55px"
+            android:layout_marginRight="55px"
+            android:textStyle="bold"
+            android:textSize="132px"
+            android:text="@string/tx_exam_num"
+            android:textColor="@color/title_left_view_bg" />
+
+        <TextView
+            android:id="@+id/tv_exam_num_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="82px"
+            android:textColor="@color/colorWhite"
+            android:text="@string/tx_exam_num_right"/>
+
+    </LinearLayout>
+
+    <!-- link -->
+    <LinearLayout
+        android:id="@+id/ll_link"
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:orientation="vertical"
+        android:paddingEnd="100px"
+        android:paddingRight="100px"
+        android:paddingLeft="100px"
+        android:layout_below="@+id/ll_exam_num" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorBlack"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/link_view_bg"/>
+    </LinearLayout>
+
+    <!-- message -->
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30px"
+        android:layout_marginTop="30px"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/ll_link"
+        android:layout_alignLeft="@+id/ll_exam_num"
+        android:gravity="center_horizontal">
+
+        <!-- 场次 -->
+        <LinearLayout
+            android:id="@+id/ll_exam_order"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="36px"
+                android:layout_marginRight="50px"
+                android:textColor="@color/colorWhite"
+                android:text="@string/tx_exam_order_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="36px"
+                android:text="@string/tx_exam_num_left"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:id="@+id/tv_exam_order_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="36px"
+                android:text="  1  "
+                android:textColor="@color/title_left_view_bg"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="36px"
+                android:text="@string/tx_exam_order_right"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_exam_order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="50px"
+            android:layout_marginStart="50px"
+            android:layout_toRightOf="@+id/ll_exam_next"
+            android:text="@string/tx_time"
+            android:textColor="@color/colorWhite" />
+
+
+        <!-- 科目 -->
+        <LinearLayout
+            android:id="@+id/ll_exam_type"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_below="@+id/ll_exam_order">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="36px"
+                android:layout_marginRight="50px"
+                android:layout_marginBottom="25px"
+                android:textColor="@color/colorWhite"
+                android:text="@string/tx_exam_type" />
+
+            <TextView
+                android:id="@+id/tv_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="36px"
+                android:text="@string/tx_exam_type_value"
+                android:textColor="@color/title_left_view_bg"/>
+
+        </LinearLayout>
+
+        <!-- 下一场次 -->
+        <LinearLayout
+            android:id="@+id/ll_exam_next"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_exam_type">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="36px"
+                android:layout_marginRight="50px"
+                android:textColor="@color/colorWhite"
+                android:text="@string/tx_exam_next" />
+
+            <TextView
+                android:id="@+id/tv_next_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="36px"
+                android:text="@string/tx_exam_next_value"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_exam_next_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:layout_marginLeft="50px"
+            android:layout_marginStart="50px"
+            android:layout_toRightOf="@+id/ll_exam_next"
+            android:layout_alignTop="@+id/ll_exam_next"
+            android:text="@string/tx_time"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/device_msg_bg">
+
+    <!-- 服务器校时 -->
+    <TextView
+        android:id="@+id/tv_date_server_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tx_date_timing_server"
+        android:textSize="22px"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="35px"
+        android:layout_marginLeft="80px"
+        android:layout_marginStart="80px"
+        android:layout_marginRight="155px"
+        android:layout_marginEnd="155px" />
+
+    <!-- button on off -->
+    <LinearLayout
+        android:id="@+id/ll_date_server_switch"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/tv_date_server_switch"
+        android:layout_alignTop="@+id/tv_date_server_switch"
+        android:layout_toEndOf="@+id/tv_date_server_switch" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tx_btn_switch_off"
+            android:textSize="22px"
+            android:textColor="@color/colorWhite" />
+
+        <com.example.destiny.myapplication.view.SwitchView
+            android:id="@+id/btn_date_server_switch"
+            android:layout_width="75px"
+            android:layout_height="40px"
+            android:layout_marginLeft="12px"
+            android:layout_marginEnd="12px"
+            android:layout_marginStart="12px"
+            android:layout_marginRight="12px"
+            app:tintColor="@color/title_left_view_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tx_btn_switch_on"
+            android:textSize="22px"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <!-- 自动校时 -->
+    <TextView
+        android:id="@+id/tv_data_auto_switch_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22px"
+        android:textColor="@color/colorWhite"
+        android:text="@string/tx_date_timing_auto"
+        android:layout_marginTop="60px"
+        android:layout_below="@+id/tv_date_server_switch"
+        android:layout_alignRight="@+id/tv_date_server_switch"
+        android:layout_alignEnd="@+id/tv_date_server_switch" />
+
+    <!-- button on off -->
+    <LinearLayout
+        android:id="@+id/ll_date_auto_switch"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/tv_data_auto_switch_on"
+        android:layout_alignBottom="@+id/tv_data_auto_switch_on"
+        android:layout_alignLeft="@+id/ll_date_server_switch"
+        android:layout_toEndOf="@+id/tv_data_auto_switch_on"
+        android:layout_alignStart="@+id/ll_date_server_switch">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tx_btn_switch_off"
+            android:textSize="22px"
+            android:textColor="@color/colorWhite" />
+
+        <com.example.destiny.myapplication.view.SwitchView
+            android:id="@+id/btn_date_auto_switch"
+            android:layout_width="75px"
+            android:layout_height="40px"
+            android:layout_marginLeft="12px"
+            android:layout_marginEnd="12px"
+            android:layout_marginStart="12px"
+            android:layout_marginRight="12px"
+            app:tintColor="@color/title_left_view_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tx_btn_switch_on"
+            android:textSize="22px"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <!-- 手动校时 -->
+    <TextView
+        android:id="@+id/tv_data_manual_switch_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22px"
+        android:textColor="@color/colorWhite"
+        android:text="@string/tx_date_timing_manual"
+        android:layout_marginTop="60px"
+        android:layout_below="@+id/tv_data_auto_switch_on"
+        android:layout_alignRight="@+id/tv_data_auto_switch_on"
+        android:layout_alignEnd="@+id/tv_data_auto_switch_on" />
+
+    <LinearLayout
+        android:layout_width="230px"
+        android:layout_height="40px"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/tv_switch_off"
+        android:background="@drawable/ed_time_bg"
+        android:layout_alignBottom="@+id/tv_data_manual_switch_on"
+        android:layout_alignLeft="@+id/ll_date_auto_switch"
+        android:layout_alignStart="@+id/ll_date_auto_switch" >
+
+        <EditText
+            android:id="@+id/ed_timing_manual"
+            android:layout_weight="8"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="2018-07-20 12 : 12"
+            android:textSize="16px"
+            android:textColor="@color/colorBlack"
+            android:enabled="false"
+            android:paddingLeft="10px"
+            android:paddingRight="10px" />
+
+        <ImageView
+            android:id="@+id/img_select_timing_manual"
+            android:layout_weight="1.5"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_time"
+            android:scaleType="fitXY"
+            android:layout_marginTop="5px"
+            android:layout_marginBottom="5px"
+            android:layout_marginRight="5px"
+            android:layout_marginEnd="5px"
+            android:layout_gravity="center_vertical|right"/>
+
+    </LinearLayout>
+</RelativeLayout>

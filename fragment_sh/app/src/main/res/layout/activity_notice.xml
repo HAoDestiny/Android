@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.NoticeActivity"
+    >
+
+    <!-- action bar -->
+    <RelativeLayout
+        android:id="@+id/rl_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="55px"
+        android:background="@color/notice_action_bar_bg">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="15px"
+            android:layout_height="20px"
+            android:src="@drawable/btn_back"
+            android:layout_marginLeft="20px"
+            android:layout_marginStart="20px"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/tv_notice_action_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32px"
+            android:textColor="@color/colorWhite"
+            android:text="@string/tx_notice_action_title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+
+    <!-- notice title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/notice_bg" >
+
+        <!-- 通知标题 -->
+        <TextView
+            android:id="@+id/tv_notice_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:textSize="24px"
+            android:textColor="@color/colorWhite"
+            android:text="关于2018年5月份毕业前课程补考安排的通知"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tv_notice_release_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tv_notice_title"
+            android:layout_toLeftOf="@+id/tv_notice_release_dp_vl"
+            android:layout_toStartOf="@+id/tv_notice_release_dp_vl"
+            android:textSize="12px"
+            android:textColor="@color/colorWhite"
+            android:text="@string/tx_notice_release_dp" />
+
+        <!-- 发布部门 -->
+        <TextView
+            android:id="@+id/tv_notice_release_dp_vl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tv_notice_title"
+            android:layout_toLeftOf="@+id/tv_notice_time"
+            android:layout_toStartOf="@+id/tv_notice_time"
+            android:textSize="12px"
+            android:textColor="@color/colorWhite"
+            android:text="教育技术与信息中心" />
+
+        <TextView
+            android:id="@+id/tv_notice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="25px"
+            android:layout_marginStart="25px"
+            android:layout_below="@+id/tv_notice_title"
+            android:layout_toLeftOf="@+id/tv_notice_time_vl"
+            android:layout_toStartOf="@+id/tv_notice_time_vl"
+            android:textSize="12px"
+            android:textColor="@color/colorWhite"
+            android:text="@string/tx_notice_time" />
+
+        <!-- 发布时间 -->
+        <TextView
+            android:id="@+id/tv_notice_time_vl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:layout_below="@+id/tv_notice_title"
+            android:layout_alignRight="@+id/tv_notice_title"
+            android:layout_alignEnd="@+id/tv_notice_title"
+            android:textSize="12px"
+            android:textColor="@color/colorWhite"
+            android:text="2018年7月5日" />
+
+        <!-- notice content 发布内容-->
+        <LinearLayout
+            android:id="@+id/ll_notice_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40px"
+            android:paddingLeft="20px"
+            android:paddingRight="20px"
+            android:layout_below="@+id/tv_notice_time_vl">
+
+            <TextView
+                android:id="@+id/tv_notice_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16px"
+                android:textColor="@color/colorWhite"
+                android:text="应届及往届未能毕业相关的学生：\n\t\t\t根据学籍管理规定, 在毕业前, 学校统一安排一次应届毕业生或往届未能毕业的学生未通过课程的补考, 本次的补考安排见附件, 请已报名的学生自行下载查看本人的补考时间、地点及方式, 准时参加考试, 未报名不能参加考试。 如有疑问, 请及时联系本学院负责考试的教学秘书。"
+                android:lineSpacingExtra="14px"
+                />
+
+        </LinearLayout>
+
+        <!-- 落款 -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="40px"
+            android:layout_marginEnd="100px"
+            android:layout_marginRight="100px"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" >
+
+            <!-- 发布部门 -->
+            <TextView
+                android:id="@+id/tv_notice_release_dp_vl_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_notice_title"
+                android:layout_toLeftOf="@+id/tv_notice_time"
+                android:layout_toStartOf="@+id/tv_notice_time"
+                android:textSize="16px"
+                android:textColor="@color/colorWhite"
+                android:text="教育技术与信息中心" />
+
+            <!-- 发布时间 -->
+            <TextView
+                android:id="@+id/tv_notice_time_vl_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:layout_below="@+id/tv_notice_title"
+                android:layout_alignRight="@+id/tv_notice_title"
+                android:layout_alignEnd="@+id/tv_notice_title"
+                android:textSize="16px"
+                android:textColor="@color/colorWhite"
+                android:text="2018年7月5日" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

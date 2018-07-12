@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CourseActivity"
+    android:background="@drawable/background">
+
+    <View
+        android:id="@+id/course_title_left_bg"
+        android:layout_width="15px"
+        android:layout_height="160px"
+        android:layout_marginTop="100px"
+        android:layout_marginStart="85px"
+        android:layout_marginLeft="85px"
+        android:orientation="vertical"
+        android:background="@color/title_left_view_bg" />
+
+    <!-- class name -->
+    <TextView
+        android:id="@+id/tv_class_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="52px"
+        android:layout_marginLeft="40px"
+        android:layout_marginStart="40px"
+        android:layout_marginTop="-10px"
+        android:textColor="@color/colorWhite"
+        android:text="@string/tx_course_class_name"
+        android:layout_alignTop="@+id/course_title_left_bg"
+        android:layout_toEndOf="@+id/course_title_left_bg"
+        android:layout_toRightOf="@+id/course_title_left_bg" />
+
+    <TextView
+        android:id="@+id/tv_course_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="74px"
+        android:layout_marginLeft="40px"
+        android:layout_marginStart="40px"
+        android:layout_marginBottom="-14px"
+        android:textColor="@color/colorWhite"
+        android:text="@string/tx_course_name"
+        android:layout_alignBottom="@+id/course_title_left_bg"
+        android:layout_toEndOf="@+id/course_title_left_bg"
+        android:layout_toRightOf="@+id/course_title_left_bg" />
+
+    <!-- course people number -->
+    <LinearLayout
+        android:id="@+id/ll_course_msg"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66px"
+        android:layout_marginBottom="10px"
+        android:layout_below="@+id/tv_course_name"
+        android:layout_alignLeft="@+id/tv_course_name"
+        android:layout_alignStart="@+id/tv_course_name">
+
+        <TextView
+            android:id="@+id/tv_course_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:text="@string/tx_time"
+            android:layout_marginEnd="50px"
+            android:layout_marginRight="50px"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:text="@string/tx_course_people_num"
+            android:layout_marginEnd="10px"
+            android:layout_marginRight="10px"
+            android:textColor="@color/colorWhite" />
+
+        <!-- 应到人数 -->
+        <TextView
+            android:id="@+id/tv_course_people_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:layout_marginEnd="50px"
+            android:layout_marginRight="50px"
+            android:textColor="@color/colorWhite"
+            android:text="@string/tx_course_people_value" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:layout_marginEnd="10px"
+            android:layout_marginRight="10px"
+            android:textColor="@color/colorWhite"
+            android:text="@string/tx_course_people_now_num" />
+
+        <!-- 实到人数 -->
+        <TextView
+            android:id="@+id/tv_course_people_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:layout_marginEnd="50px"
+            android:layout_marginRight="50px"
+            android:textColor="@color/colorWhite"
+            android:text="@string/tx_course_people_value" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10px"
+            android:layout_marginRight="10px"
+            android:textSize="36px"
+            android:textColor="@color/colorWhite"
+            android:text="@string/tx_course_people_not" />
+
+        <!-- 未到人数 -->
+        <TextView
+            android:id="@+id/tv_course_people_not"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36px"
+            android:text="@string/tx_course_people_value"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+     <!-- link -->
+    <LinearLayout
+        android:id="@+id/ll_link"
+        android:layout_width="match_parent"
+        android:layout_height="4px"
+        android:orientation="vertical"
+        android:paddingEnd="120px"
+        android:paddingRight="100px"
+        android:paddingLeft="120px"
+        android:layout_below="@+id/ll_course_msg" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/colorBlack"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/link_view_bg"/>
+    </LinearLayout>
+
+    <!-- teacher message -->
+    <LinearLayout
+        android:id="@+id/ll_teacher"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:layout_marginBottom="115px"
+        android:layout_below="@+id/ll_link"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="170px"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="50px"
+            android:layout_marginStart="50px"
+            android:adjustViewBounds="false"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40px">
+
+            <!-- 教师名称 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30px"
+                    android:textSize="30px"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/tx_course_teacher_name"/>
+
+                <TextView
+                    android:id="@+id/tv_teacher_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="赖教授"
+                    android:textSize="30px"
+                    android:layout_marginBottom="30px"
+                    android:layout_marginLeft="20px"
+                    android:textColor="@color/colorWhite"
+                    />
+
+            </LinearLayout>
+
+            <!-- 课节 -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30px"
+                    android:textColor="@color/colorWhite"
+                    android:text="@string/tx_course_class_num"/>
+
+                <TextView
+                    android:id="@+id/tv_course_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:text="第7节"
+                    android:textSize="30px"
+                    android:textColor="@color/colorWhite"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

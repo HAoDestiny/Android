@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="tx_time">00:00–00:00</string>
+
+    <string name="tx_exam_title">2018年全国公务员考试 (省考)</string>
+    <string name="tx_exam_num_left">第</string>
+    <string name="tx_exam_num">013</string>
+    <string name="tx_exam_num_right">考场</string>
+    <string name="tx_exam_order_left">当前场次</string>
+    <string name="tx_exam_order_num"> 1 </string>
+    <string name="tx_exam_order_right">场</string>
+    <string name="tx_exam_type">考试科目</string>
+    <string name="tx_exam_type_value">社会政治</string>
+    <string name="tx_exam_next">下一场次</string>
+    <string name="tx_exam_next_value">语言理解与表达</string>
+
+
+    <string name="tx_course_class_name">10号楼103课室</string>
+    <string name="tx_course_name">VB语言程序设计</string>
+    <string name="tx_course_people_num">应到 </string>
+    <string name="tx_course_people_now_num">实到 </string>
+    <string name="tx_course_people_not">未到 </string>
+    <string name="tx_course_people_value">00</string>
+    <string name="tx_course_teacher_name">授课老师:  </string>
+    <string name="tx_course_class_num">当前课节:  </string>
+
+    <!-- 通知 -->
+    <string name="tx_notice_action_title">通  知</string>
+    <string name="tx_notice_title">关于2018年5月份毕业前课程补考安排的通知</string>
+    <string name="tx_notice_release_dp">发布部门： </string>
+    <string name="tx_notice_time">发布时间：</string>
+    
+    <!-- 关于设备 -->
+    <string name="tx_device_name">ICCT终端</string>
+    <string name="tx_device_version">软件版本：2.0.1.20180701_Bete</string>
+    <string name="tx_device_powerby">\@ 2016–2018  SHIHAN.ALL rights reserved.</string>
+    <string name="tx_device_prospectus">授权于： 深圳职业技术学院 使用</string>
+    <string name="tx_device_com">技术支持： 广州视翰电子科技有限公司 020-85162701</string>
+    <string name="tx_device_warning">警告： 本计算机程序受著作权法和国际条约保护。 如未经授权而擅自复制或传播本程序 (或其中任何部分) , 将受到严厉的民事及刑事制裁, 并将在法律许可范围内受到最大程度的起诉。</string>
+
+    <!-- setting -->
+    <string name="tx_setting_account">日期设置</string>
+    <string name="tx_setting_sound">声音设置</string>
+    <string name="tx_setting_on_off">开关机设置</string>
+    <string name="tx_setting_mh">认证模式</string>
+
+    <!-- 日期时间 -->
+    <string name="tx_date_timing_server">服务器校时</string>
+    <string name="tx_date_timing_auto">自动校时</string>
+    <string name="tx_date_timing_manual">手动校时</string>
+
+    <!-- 声音设置 -->
+    <string name="tx_sound_switch">声音开关</string>
+    <string name="tx_sound_volume">音量调节</string>
+    
+    <!-- 开关机设置 -->
+    <string name="tx_switch">定时开关</string>
+    <string name="tx_btn_switch_on">ON</string>
+    <string name="tx_btn_switch_off">OFF</string>
+    <string name="tx_switch_off">定时关</string>
+    <string name="tx_switch_on">定时开</string>
+
+    <!-- 认证模式 -->
+    <string name="tx_md_one">模式一</string>
+    <string name="tx_md_one_val">(单一认证)</string>
+    <string name="tx_md_two">模式二</string>
+    <string name="tx_md_two_val">(1+1认证)</string>
+    <string name="tx_md_qr">二维码</string>
+    <string name="tx_md_ic_car">IC卡</string>
+    <string name="tx_md_reg_face">人脸识别</string>
+
+    <!-- 数据导出 -->
+    <string name="tx_back">退 出</string>
+    <string name="tx_data_output">数据导出</string>
+    <string name="tx_data_output_type">请选择要导出的数据类型</string>
+    <string name="tx_data_type_attendance">考勤数据</string>
+    <string name="tx_data_type_log">日志信息</string>
+    <string name="tx_data_type_conf">配置数据</string>
+    <string name="tx_data_type_action_log">操作日志</string>
+    <string name="tx_btn_next">下一步</string>
+</resources>

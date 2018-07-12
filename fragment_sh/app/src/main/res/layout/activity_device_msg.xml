@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/device_msg_bg">
+
+    <TextView
+        android:id="@+id/tv_device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="90px"
+        android:layout_marginStart="90px"
+        android:textColor="@color/colorWhite"
+        android:text="@string/tx_device_name" />
+
+    <TextView
+        android:id="@+id/tv_device_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:layout_marginTop="5px"
+        android:layout_marginLeft="90px"
+        android:layout_marginStart="90px"
+        android:textColor="@color/colorWhite"
+        android:text="@string/tx_device_version" />
+
+    <!-- link -->
+    <LinearLayout
+        android:id="@+id/ll_link"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:orientation="vertical"
+        android:layout_marginTop="5px"
+        android:paddingEnd="50px"
+        android:paddingRight="50px"
+        android:paddingLeft="50px"
+        android:layout_below="@+id/ll_exam_num" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorBlack"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/link_view_bg"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_device_powerby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:layout_marginTop="5px"
+        android:layout_marginLeft="90px"
+        android:layout_marginStart="90px"
+        android:textColor="@color/colorWhite"
+        android:text="@string/tx_device_powerby" />
+
+    <TextView
+        android:id="@+id/tv_device_prospectus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:layout_marginTop="5px"
+        android:layout_marginLeft="90px"
+        android:layout_marginStart="90px"
+        android:textColor="@color/colorWhite"
+        android:text="@string/tx_device_prospectus" />
+
+    <TextView
+        android:id="@+id/tv_device_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:layout_marginTop="5px"
+        android:layout_marginLeft="90px"
+        android:layout_marginStart="90px"
+        android:textColor="@color/colorWhite"
+        android:text="@string/tx_device_com" />
+
+    <TextView
+        android:id="@+id/tv_device_warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15px"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="90px"
+        android:layout_marginStart="90px"
+        android:layout_marginRight="110px"
+        android:layout_marginEnd="110px"
+        android:lineSpacingExtra="12px"
+        android:textColor="@color/colorWhite"
+        android:text="@string/tx_device_warning" />
+
+</LinearLayout>

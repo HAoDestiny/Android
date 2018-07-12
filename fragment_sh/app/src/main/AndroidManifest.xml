@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.destiny.myapplication">
+
+    <!--android:roundIcon="@mipmap/ic_launcher_round"-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".BaseApplication">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 课程 -->
+        <activity android:name=".activity.CourseActivity"/>
+
+        <!-- 通知 -->
+        <activity android:name=".activity.NoticeActivity"/>
+
+        <!-- 关于设备 -->
+        <activity android:name=".activity.DeviceMsgActivity"/>
+
+        <!-- 常规设置 -->
+        <activity android:name=".activity.CommentSettingActivity"/>
+
+        <!-- 数据导出 -->
+        <activity android:name=".activity.DataOutPutActivity"/>
+    </application>
+
+</manifest>
